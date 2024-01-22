@@ -1,0 +1,247 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #1e9234;
+}
+
+.container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  padding-top: 10vh;
+  justify-content: center;
+
+}
+
+.content{
+  color: black;
+  font-size: 2.5rem;
+}
+
+.btn_container{
+  display:flex;
+  width: 60%;
+  padding: 1rem 0;
+  margin: auto;
+
+  justify-content: space-between;
+}
+.btn{
+  background-color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+
+}
+
+.todo_container{
+  height: 70vh;
+  width: 45%;
+  background-color: #edf0f0;
+  border-radius: 12px;
+
+}
+
+.todo_heading{
+  text-align: center;
+}
+
+.todo_heading h1{
+  padding: 6px 0;
+}
+
+.todo_container{
+  margin: auto;
+}
+.todo_input{
+  width: 90%;
+  margin: auto;
+}
+#todo{
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: none;
+  padding: 3px 8px;
+
+}
+
+.add_btn{
+  width:full;
+  margin-left: 1rem;
+  padding: 3px 14px;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  color: white;
+  border: none;
+}
+
+.todos{
+  padding: 20px 30px;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.todo{
+  height: 2.5rem;
+  background-color: blue;
+  display: flex;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.todo_name{
+  font-size: 1.3rem;
+  width: 70%;
+  font-weight:600;
+  color: white;
+}
+
+.todo_btns{
+  display:flex;
+  gap: 1rem;
+}
+
+.todo_btns button{
+  font-size: 1.3rem;
+  padding: 2px 10px;
+}
+
+
+// register page
+
+
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 10px;
+}
+
+.center h1{
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid silver;
+}
+
+.center form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px 0;
+}
+
+#edit{
+  background-color: green;
+}
+
+#add{
+  background-color: #3149e1;
+}
+
+.txt_field input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0px;
+  height: 2px;
+  background: #2691d9;
+  transition: .5s;
+}
+
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: #2691d9;
+}
+
+.txt_field input:focus ~ span::before,
+.txt_field input:Valid ~ span::before{
+  width: 100%;
+}
+
+.pass{
+  margin: -5px 0 20px 5px;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+
+.pass:hover{
+  text-decoration: underline;
+}
+
+input[type="Submit"]{
+  width: 100%;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+
+}
+
+input[type="Submit"]:hover{
+  background: #2691d9;
+  color: #e9f4fb;
+  transition: .5s;
+}
+
+.signup_link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+
+.signup_link a{
+  color: #2691d9;
+  text-decoration: none;
+}
+
+.signup_link a:hover{
+  text-decoration: underline;
+}
+
+.HomeAbout{
+  width: 100vw;
+  height: 25vh;
+}
+
+.container_form{
+  width: 29vw;
+  border-radius: 9px;
+  height: max-content;
+  /* height: 70vh; */
+  background-color: white;
+}
