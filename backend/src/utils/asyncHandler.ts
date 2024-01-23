@@ -3,4 +3,3 @@ export const asyncHandler = (reqHandler: any) => {
         Promise.resolve(reqHandler(req, res, next)).catch(err => next(err))
     }
 }
-
